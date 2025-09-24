@@ -1,8 +1,8 @@
 import { useState } from "react";
-import toast from "react-hot-toast";
 import { useAuthContext } from "../context/AuthContext";
+import toast from "react-hot-toast";
 
-function useLogout() {
+const useLogout = () => {
   const [loading, setLoading] = useState(false);
   const { setAuthUser } = useAuthContext();
 
@@ -13,7 +13,6 @@ function useLogout() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       });
-
       const data = await res.json();
       if (data.error) {
         throw new Error(data.error);
@@ -29,6 +28,5 @@ function useLogout() {
   };
 
   return { loading, logout };
-}
-
+};
 export default useLogout;

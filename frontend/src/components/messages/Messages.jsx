@@ -2,9 +2,11 @@ import { useEffect, useRef } from "react";
 import useGetMessages from "../../hooks/useGetMessages";
 import MessageSkeleton from "../skeletons/MessageSkeleton";
 import Message from "./Message";
+import useListenMessages from "../../hooks/useListenMessages";
 
-function Messages() {
+const Messages = () => {
   const { messages, loading } = useGetMessages();
+  useListenMessages();
   const lastMessageRef = useRef();
 
   useEffect(() => {
@@ -24,9 +26,8 @@ function Messages() {
         ))}
 
       {loading && [...Array(3)].map((_, idx) => <MessageSkeleton key={idx} />)}
-      {!loading && messages.length === 0 && <p className="text-center">Send a message to start a conversation</p>}
+      {!loading && messages.length === 0 && <p className="text-center">Send a message to start the conversation</p>}
     </div>
   );
-}
-
+};
 export default Messages;
