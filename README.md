@@ -3,7 +3,8 @@
 <p align="center"> <img src="https://img.shields.io/badge/React-blue" /> <img src="https://img.shields.io/badge/TailwindCSS-38B2AC" /> <img src="https://img.shields.io/badge/DaisyUI-ff69b4" /> <img src="https://img.shields.io/badge/Vite-yellow" /> <img src="https://img.shields.io/badge/Node.js-68a063" /> <img src="https://img.shields.io/badge/Express-lightgrey" /> <img src="https://img.shields.io/badge/MongoDB-brightgreen" /> <img src="https://img.shields.io/badge/Socket.IO-black" /> </p>
 A full-stack chat application where users can chat in real time. Built with a modern frontend powered by React + TailwindCSS + DaisyUI, and a robust backend using Node.js, Express, Socket.IO and MongoDB
 
-
+[🌐 Visit the app](https://mern-chat-cw4x.onrender.com)
+<p><sub>*Note: The app is deployed on Render.com, so it may take a couple of seconds to start when first loading.</sub></p>
 
 
 ## 📸 Chat
